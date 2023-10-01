@@ -26,13 +26,18 @@
 </section>
 
 <script>
-    document.getElementById("txt").addEventListener("keyup", function(event) {
+    document.getElementById("txt").addEventListener("keyup", function() {
         document.querySelector('h1').innerText=(document.querySelector("#txt").value);
     });
 
     document.querySelector("#btn1").addEventListener("click",function(){
         document.querySelector('h1').style.color='Red';
     });
+
+    document.querySelector("#btn2").addEventListener("click",function(){
+        document.querySelector('img').style.backgroundImage = 'url('+document.querySelector("#url").value;+')';
+    });
+    
 </script>
 </body>
 </html>
